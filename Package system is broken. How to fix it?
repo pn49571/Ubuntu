@@ -1,0 +1,11 @@
+
+
+After you get that error, try sudo apt-get -f install to force an install of the files that didn't get loaded because of the error.
+
+Then try sudo apt-get update again, sudo apt-get -f install back and forth until only the package that has the error is left.
+
+sudo dpkg --configure -a
+
+and clean the cache
+
+sudo apt-get clean
