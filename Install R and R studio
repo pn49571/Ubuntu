@@ -1,0 +1,10 @@
+gksudo gedit /etc/apt/sources.list
+This will open the sources.list file in gedit. You just need to add the repository above then save and close
+
+You can then install the complete R system, by typing the following in the console:
+
+sudo apt-get update
+sudo apt-get install r-base
+
+
+Install R studio
