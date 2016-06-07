@@ -1,0 +1,3 @@
+sudo sed -i '/cdrom/d' /etc/apt/sources.list
+
+grep -v '#' /etc/apt/sources.list
