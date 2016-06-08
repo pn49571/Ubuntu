@@ -1,0 +1,3 @@
+Command for help : help(sum),whatis sum,man sum
+see which directory we are in : pwd
+lists files in current directory: ls
