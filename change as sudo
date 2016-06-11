@@ -1,0 +1,58 @@
+Open the Terminal
+    - Click "Activities"
+    - Click in the "Type to search..." box
+    - Type in "Terminal" and press the [enter] key
+
+Switch to root user
+    - Type in the Terminal the following command
+        su
+    - then press [enter]
+    - now type in the root password and press [enter]
+        - The command prompt should now look like this...
+            root@debian:/home/yourusernamehere#
+    
+Install "sudo"
+    - Now that you are root user within the Terminal lets install "sudo"
+    - Type in the following command...
+        apt-get install sudo
+    - then press [enter]
+
+Add your username to the sudo group
+    - Type in the following command...
+        adduser yourusernamehere sudo
+    - then press [enter]
+    
+Now add your name to /etc/sudoers file
+    - Type in the following command...
+        nano /etc/sudoers
+    - then press [enter]
+    - Scroll down and look for the line "%sudo  ALL=(ALL:ALL) ALL"
+    - Below that line type in the following...
+        yourusernamehere  ALL=(ALL:ALL) ALL
+    - Press "Ctrl+x" then press "y" and then press [enter] to exit and save the file
+    
+Now we exit out of the Terminal completely
+    - Type in the following command...
+        exit
+    - then press [enter]
+    - Type exit again...
+        exit
+    - then press [enter]
+    - That should have closed the Terminal application 
+    
+Now let's open a new Terminal and test to see if sudo is working for your user name
+    - Click "Activities"
+    - Click in the "Type to search..." box
+    - Type in "Terminal" and press the [enter] key
+    - Test sudo by typing the following command...
+        sudo ls
+    - then press [enter]
+    - type in your password and press [enter]
+
+    - If the output looks like the following...
+        yourusernamehere is not in the sudoers file.  This incident will be reported.
+    - then you might have to start from the beginning of these instructions and try again.
+
+    - If the output looks like this...
+        Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+    - Your username now has sudo rights, congratulations!
