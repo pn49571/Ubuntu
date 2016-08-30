@@ -1,0 +1,6 @@
+grep -rl "string" /path
+
+
+where,
+     -r is recursive
+    /path is the subdirectories to be searched
