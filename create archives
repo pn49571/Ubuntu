@@ -1,0 +1,15 @@
+Create a Zip file
+zip -r myarchive.zip *
+
+where,
+     r is recursive
+     * is files in the current directory
+     
+     
+     
+Create a tarball
+tar -c abc tt zz > tarball.tar
+
+where, 
+     abc,tt,zz are folders
+    
