@@ -1,0 +1,8 @@
+Convert DOS/Windows newlines (CRLF) to Unix newlines (LF).
+
+Code:
+sed -i 's/.$//' file
+Convert Unix newlines (LF) to DOS/Windows newlines (CRLF).
+
+Code:
+sed -i "s/$/`echo -e \\\r`/" file
