@@ -1,0 +1,11 @@
+sudo apt-get -y install xrdp
+Next, change the encryption level to high from the default low:
+
+sudo nano /etc/xrdp/xrdp.ini
+encrypt_level=high
+Next, allow just RDP through the local firewall:
+
+sudo ufw allow 3389/tcp
+Finally, restart xrdp and you should be able to connect:
+
+sudo /etc/init.d/xrdp restart
