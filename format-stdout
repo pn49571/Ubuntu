@@ -1,0 +1,5 @@
+echo "Now time is `nc time.nist.gov 13`"
+Result : Now time is
+58269 18-05-31 17:34:01 50 0 0 620.8 UTC(NIST) *
+
+
